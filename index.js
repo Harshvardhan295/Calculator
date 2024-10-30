@@ -1,27 +1,31 @@
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
+let resultEl = document.getElementById("result-el");
 
-let sumEl = document.getElementById("sum-el")
+function getInputValues() {
+    let num1 = parseFloat(document.getElementById("num1-el").value);
+    let num2 = parseFloat(document.getElementById("num2-el").value);
+    return { num1, num2 };
+}
 
 function add() {
-    let result = num1 + num2
-    sumEl.textContent = "Sum: " + result
+    let { num1, num2 } = getInputValues();
+    let result = num1 + num2;
+    resultEl.textContent = "Sum: " + result;
 }
 
 function subtract() {
-    let result = num1 - num2
-    sumEl.textContent = "Difference: " + result
+    let { num1, num2 } = getInputValues();
+    let result = num1 - num2;
+    resultEl.textContent = "Difference: " + result;
 }
 
 function divide() {
-    let result = num1 / num2
-    sumEl.textContent = "Divison: " + result
+    let { num1, num2 } = getInputValues();
+    let result = num1 / num2;
+    resultEl.textContent = "Division: " + result;
 }
 
 function multiply() {
-    let result = num1 * num2
-    sumEl.textContent = "Multiplication: " + result
+    let { num1, num2 } = getInputValues();
+    let result = num1 * num2;
+    resultEl.textContent = "Multiplication: " + result;
 }
-
