@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 350px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 h1 {
